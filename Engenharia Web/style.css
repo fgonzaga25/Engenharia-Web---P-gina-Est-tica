@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+/* cor cinza escuro #2b2b2b */
+/* font-family: 'Quicksand', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #171810;
+}
+
+header {
+    display: flex;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding: 2vh;
+}
+
+#div-logo {
+    height: 30vh;
+}
+
+.div-header {
+    display: flex;
+    width: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-header a {
+    color: aliceblue;
+    background-color: #08C056;
+    border-radius: 2vh;
+    padding: 3vh;
+    font-size: 3vh;
+}
+
+.div-header a:hover {
+    background-color: #61b785;
+    border: 2px solid white;
+}
+
+#div-about {
+    display: flex;
+    border-radius: 2vh;
+    flex-direction: column;
+    margin: 0vh 30vh 0vh 30vh;
+    background: linear-gradient(to right, #61b785, #08C056);
+}
+
+#div-about-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 6vh;
+    align-self: center;
+    color: aliceblue;
+    margin: 4vh;
+}
+
+#div-about-text {
+    color: aliceblue;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3vh;
+    margin: 4vh 10vh 10vh 10vh;
+    text-align: justify;
+}
+
+#div-specifications {
+    border: 2px red solid;
+    display: flex;
+    margin: 3vh 60vh 0vh 60vh;
+    height: 50vh;
+    background: url(./background-specifications.jpg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    backdrop-filter: 2px;
+}
+
+#div-contact {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: #105e31;
+    height: 5vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#div-contact-email {
+    padding-right: 50vh;
+    padding-left: 1vh;
+    color: black;
+    font-weight: bold;
+}
+
+#div-contact-phone {
+    font-weight: bold;
+}
+
+#phone-icon {
+    width: 6vh;
+}
+
+/* Telas pequenas (até 600px de largura) */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-header {
+        width: auto;
+        margin: 1vh;
+    }
+
+    #div-logo {
+        height: 20vh;
+    }
+
+    .div-header a {
+        padding: 2vh;
+        font-size: 2vh;
+    }
+
+    #div-about {
+        margin: 0vh 5vh 0vh 5vh;
+    }
+
+    #div-about-title {
+        font-size: 4vh;
+        margin: 2vh;
+    }
+
+    #div-about-text {
+        font-size: 2vh;
+        margin: 2vh;
+    }
+
+    #div-specifications {
+        margin: 3vh 5vh 0vh 5vh;
+        height: auto;
+    }
+
+    #div-contact {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #div-contact-email {
+        padding: 1vh;
+        text-align: center;
+    }
+
+    #div-contact-phone {
+        padding: 1vh;
+        text-align: center;
+    }
+
+    #phone-icon {
+        width: 4vh;
+    }
+}
+
+/* Telas médias (de 600px a 1024px de largura) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 1vh;
+    }
+
+    .div-header a {
+        padding: 2vh;
+        font-size: 2.5vh;
+    }
+
+    #div-about {
+        margin: 0vh 10vh 0vh 10vh;
+    }
+
+    #div-about-title {
+        font-size: 5vh;
+        margin: 3vh;
+    }
+
+    #div-about-text {
+        font-size: 2.5vh;
+        margin: 3vh;
+    }
+
+    #div-specifications {
+        margin: 3vh 15vh 0vh 15vh;
+    }
+}
+
+/* Telas grandes (a partir de 1025px de largura) */
+@media screen and (min-width: 1025px) {
+    header {
+        padding: 2vh;
+    }
+
+    .div-header a {
+        padding: 3vh;
+        font-size: 3vh;
+    }
+
+    #div-about {
+        margin: 0vh 30vh 0vh 30vh;
+    }
+
+    #div-about-title {
+        font-size: 6vh;
+        margin: 4vh;
+    }
+
+    #div-about-text {
+        font-size: 3vh;
+        margin: 4vh 10vh 10vh 10vh;
+    }
+
+    #div-specifications {
+        margin: 3vh 60vh 0vh 60vh;
+    }
+}
